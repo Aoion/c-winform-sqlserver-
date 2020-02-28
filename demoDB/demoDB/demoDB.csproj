@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DE9E4E6A-95A1-43E2-B2F5-00E6885563CE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>demoDB</RootNamespace>
+    <AssemblyName>demoDB</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin.Designer.cs">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="All.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="All.Designer.cs">
+      <DependentUpon>All.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Back.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Back.Designer.cs">
+      <DependentUpon>Back.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Empty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Empty.Designer.cs">
+      <DependentUpon>Empty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HStatus.Designer.cs">
+      <DependentUpon>HStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="In.Designer.cs">
+      <DependentUpon>In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mangagecustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mangagecustomer.Designer.cs">
+      <DependentUpon>Mangagecustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordWrong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PasswordWrong.Designer.cs">
+      <DependentUpon>PasswordWrong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QueryC.Designer.cs">
+      <DependentUpon>QueryC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Record.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Record.Designer.cs">
+      <DependentUpon>Record.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuccessDelete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuccessDelete.Designer.cs">
+      <DependentUpon>SuccessDelete.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All.resx">
+      <DependentUpon>All.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Back.resx">
+      <DependentUpon>Back.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Empty.resx">
+      <DependentUpon>Empty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HStatus.resx">
+      <DependentUpon>HStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="In.resx">
+      <DependentUpon>In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mangagecustomer.resx">
+      <DependentUpon>Mangagecustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PasswordWrong.resx">
+      <DependentUpon>PasswordWrong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="QueryC.resx">
+      <DependentUpon>QueryC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Record.resx">
+      <DependentUpon>Record.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuccessDelete.resx">
+      <DependentUpon>SuccessDelete.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
